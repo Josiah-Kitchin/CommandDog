@@ -1,15 +1,14 @@
 
 
-
+import speech
 
 def main(): 
-    print("Hello world")
 
+    print("Recording...")
+    audio = speech.record(duration=3)
+    text = speech.transcribe(audio)
 
-
-
-
-
+    print(f"You said: ${text}")
 
 
 
